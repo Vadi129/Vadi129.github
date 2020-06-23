@@ -13,100 +13,29 @@ git push            visszatöltés
 <head>
     <meta charset="UTF-8">     <!-- minden betűfajtát használjon-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--initial-scale: hányszoros nagyítás -->
-    <title>Egy szuper oldal</title> <!-- a lap címe-->
+    <title>Szerelmemnek</title> <!-- a lap címe-->
 </head>
 
 <body>
-<!--felsorolás-->
-    <ul> <!-- rendeztlen (pontok) felsorolás-->
-        <li> <!--felsoroloás egyes elemei-->
-            <a href="/">Home</a>  <!--home oldalra átugrás-->
-        </li>
-        <li>
-            <a href="/pages/Products.html">Products</a>
-        </li>
-        <li>
-            <a href="/pages/orders.html">Orders</a><!-- / és valami mappa akkor a gyökérből kiindulva abban a mappában keresi-->
-        </li>
-        <li>
-            <a href="/about.html">Abouts</a><!--csak / akkor fájlt abban a mappában keresi ahol épp van(most gyökérben)-->
-        </li>
-    </ul>
-    <h1>Fantastic Burger</h1> <!--fejléc cím-->
-    <ul>
-        <li>
-            Meat lover
-            <ul><!--fesoroláson belüli felsorolás (mindenképpen elemen belül kell lennie!)-->
-                <li>Beef</li>
-                <li>Pork</li>
-                <li>Turkey</li>
-            </ul>
-        </li>
-        <li>Vegetarian</li>
-        <li>Piedone</li>
-    </ul>
 
-    <h2>Step of Order</h2>
-    <ol><!-- rendezett (számok) felsorolás-->
-        <li>Coose burger</li> <!--felsoroloás egyes elemei-->
-        <li>Bu it</li>
-        <li>Give your address</li>
-        <li>Eat</li>
-    </ol>
-<!--behivatkozás-->
-    <p><!--bekezdés-->
-        <!--más oldal behivatkozása-->
-        <a target="blank" 
-        href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/"> <!--behivatkazott url-->
-        Élj a mának <!--kiírt cím-->
-        </a>
-    </p>
-    <p>
-        <a target="blank"
-            href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/">
-            <img width="100" src="img/hamburger.jpg" alt="tasty burger"><!--behivatkozás helyére tett kép mérete, elérése, ha nem tölt be heyére írt szöveg-->
-        </a>
-    </p>
-    <p><!--oldalra átugrás-->
-        <a href="pages/orders.html">
-            Orders <!--megjelenített név-->
-        </a>
-    </p>
+    <h1>Az én egyetlen nagyon nagy szerelmemnek</h1> <!--fejléc cím-->
+    
+    <h3> Mert én <i> nagyon nagyon</i> <b>szeretlek</b> TÉGED.</h3> <!--i dőlt betű; b félkövér-->
+
+
     <p><!--kép betétel-->
-        <img width="100"  src="https://eljamanak.hu/wp-content/uploads/2016/11/HAMBI-1.jpg" alt="tasty burger"> 
+        <img width="300"  src="https://upload.wikimedia.org/wikipedia/commons/3/33/-LOVE-love-36983825-1680-1050.jpg" alt="szivecske"> 
+        
     </p> 
+    <p>Kattints
+        <a target="blank" 
+        href="https://i.pinimg.com/originals/64/6b/a8/646ba88428abfb2ddbc85ef9b39d89aa.gif"> <!--behivatkazott url-->
+        ide <!--kiírt cím-->
+        </a>
+ 
+    </p>
+    
 
-<!--tábblázat-->
-    <table>
-        <caption>Opening hours</caption><!--cím-->
-        <thead><!--fejléc-->
-            <tr>
-                <th>Day</th>
-                <th>Open</th>
-                <th>Close</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><!--1. sor-->
-                <td>Monday-Friday</td><!--1. mező-->
-                <td>09:00</td><!--2. mező-->
-                <td rowspan="2">21:00</td><!--mező amely 2 magas (függőlegesen nyújtott)-->
-            </tr>
-            <tr><!--2. sor-->
-                <td>Saturday</td>
-                <td>10:00</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td colspan="2">Closed</td> <!--mező amely 2 széles (vízszintesen nyújtott)-->
-            </tr>
-        </tbody>
-        <tfoot><!--lábléc-->
-            <tr>
-                <td colspan="3">&copy;2019</td>
-            </tr>
-        </tfoot>
-    </table>
 
 </body>
 
