@@ -1,32 +1,42 @@
+<!--felső sorban terminal-new terminal-ezzelmeg lehet nyitni egy parancssort
+cd ..               kijjebbi mappába lépés
+cd . \valami\       beljebbi mappába lépés
+git clone https://github.com/Vadi129/Vadi129.github.io.git        klónozás githubról kell bemásolni a címet
+git add .           minden hozzáadása fájlok ne csak saját mappában legyenek benne
+git commit -m "valami"     mentés "valami"= megjegyzés
+git pull            biztonság szempontjából letöltés
+git push            visszatöltés
+-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Egy szuper oldal</title>
+    <meta charset="UTF-8">     <!-- minden betűfajtát használjon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--initial-scale: hányszoros nagyítás -->
+    <title>Egy szuper oldal</title> <!-- a lap címe-->
 </head>
 
 <body>
-    <ul>
-        <li>
-            <a href="/">Home</a>
+<!--felsorolás-->
+    <ul> <!-- rendeztlen (pontok) felsorolás-->
+        <li> <!--felsoroloás egyes elemei-->
+            <a href="/">Home</a>  <!--home oldalra átugrás-->
         </li>
         <li>
             <a href="/pages/Products.html">Products</a>
         </li>
         <li>
-            <a href="/pages/orders.html">Orders</a>
+            <a href="/pages/orders.html">Orders</a><!-- / és valami mappa akkor a gyökérből kiindulva abban a mappában keresi-->
         </li>
         <li>
-            <a href="/about.html">Abouts</a>
+            <a href="/about.html">Abouts</a><!--csak / akkor fájlt abban a mappában keresi ahol épp van(most gyökérben)-->
         </li>
     </ul>
-    <h1>Fantastic Burger</h1>
+    <h1>Fantastic Burger</h1> <!--fejléc cím-->
     <ul>
         <li>
             Meat lover
-            <ul>
+            <ul><!--fesoroláson belüli felsorolás (mindenképpen elemen belül kell lennie!)-->
                 <li>Beef</li>
                 <li>Pork</li>
                 <li>Turkey</li>
@@ -37,22 +47,66 @@
     </ul>
 
     <h2>Step of Order</h2>
-    <ol>
-        <li>Coose burger</li>
+    <ol><!-- rendezett (számok) felsorolás-->
+        <li>Coose burger</li> <!--felsoroloás egyes elemei-->
         <li>Bu it</li>
         <li>Give your address</li>
         <li>Eat</li>
     </ol>
+<!--behivatkozás-->
+    <p><!--bekezdés-->
+        <!--más oldal behivatkozása-->
+        <a target="blank" 
+        href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/"> <!--behivatkazott url-->
+        Élj a mának <!--kiírt cím-->
+        </a>
+    </p>
+    <p>
+        <a target="blank"
+            href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/">
+            <img width="100" src="img/hamburger.jpg" alt="tasty burger"><!--behivatkozás helyére tett kép mérete, elérése, ha nem tölt be heyére írt szöveg-->
+        </a>
+    </p>
+    <p><!--oldalra átugrás-->
+        <a href="pages/orders.html">
+            Orders <!--megjelenített név-->
+        </a>
+    </p>
+    <p><!--kép betétel-->
+        <img width="100"  src="https://eljamanak.hu/wp-content/uploads/2016/11/HAMBI-1.jpg" alt="tasty burger"> 
+    </p> 
 
-    <p><a target="blank"
-            href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/">
-            Élj a mának </a></p>
-    <p><a target="blank"
-            href="https://eljamanak.hu/termek/nagy-kihivas-hamburger-ha-mindent-megeszel-visszakapod-az-arat/">
-            <img width="100" src="img/hamburger.jpg" alt="tasty burger"></a></p>
-    <p><a href="pages/orders.html">
-            Orders</a></p>
-    <p><img width="100" src="https://eljamanak.hu/wp-content/uploads/2016/11/HAMBI-1.jpg" alt="tasty burger"> </p>
+<!--tábblázat-->
+    <table>
+        <caption>Opening hours</caption><!--cím-->
+        <thead><!--fejléc-->
+            <tr>
+                <th>Day</th>
+                <th>Open</th>
+                <th>Close</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><!--1. sor-->
+                <td>Monday-Friday</td><!--1. mező-->
+                <td>09:00</td><!--2. mező-->
+                <td rowspan="2">21:00</td><!--mező amely 2 magas (függőlegesen nyújtott)-->
+            </tr>
+            <tr><!--2. sor-->
+                <td>Saturday</td>
+                <td>10:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td colspan="2">Closed</td> <!--mező amely 2 széles (vízszintesen nyújtott)-->
+            </tr>
+        </tbody>
+        <tfoot><!--lábléc-->
+            <tr>
+                <td colspan="3">&copy;2019</td>
+            </tr>
+        </tfoot>
+    </table>
 
 </body>
 
