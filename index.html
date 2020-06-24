@@ -14,6 +14,8 @@ git push            visszatöltés
     <meta charset="UTF-8">     <!-- minden betűfajtát használjon-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--initial-scale: hányszoros nagyítás -->
     <title>Egy szuper oldal</title> <!-- a lap címe-->
+    <link rel="stylesheet" href="css/General.css">
+
 </head>
 
 <body>
@@ -24,16 +26,16 @@ git push            visszatöltés
 <!--felsorolás-->
     <ul> <!-- rendeztlen (pontok) felsorolás-->
         <li> <!--felsoroloás egyes elemei-->
-            <a href="/">Home</a>  <!--home oldalra átugrás-->
+            <a class="page" href="/">Home</a>  <!--home oldalra átugrás-->
         </li>
         <li>
-            <a href="/pages/Products.html">Products</a>
+            <a class="page" href="/pages/Products.html">Products</a>
         </li>
         <li>
-            <a href="/pages/orders.html">Orders</a><!-- / és valami mappa akkor a gyökérből kiindulva abban a mappában keresi-->
+            <a class="page" href="/pages/orders.html">Orders</a><!-- / és valami mappa akkor a gyökérből kiindulva abban a mappában keresi-->
         </li>
         <li>
-            <a href="/about.html">Abouts</a><!--csak / akkor fájlt abban a mappában keresi ahol épp van(most gyökérben)-->
+            <a class="page" href="/about.html">Abouts</a><!--csak / akkor fájlt abban a mappában keresi ahol épp van(most gyökérben)-->
         </li>
     </ul>
     <h1>Fantastic Burger</h1> <!--fejléc cím-->
@@ -84,38 +86,6 @@ git push            visszatöltés
     <p><!--kép betétel-->
         <img width="100"  src="https://eljamanak.hu/wp-content/uploads/2016/11/HAMBI-1.jpg" alt="tasty burger"> 
     </p> 
-
-<!--tábblázat-->
-    <table>
-        <caption>Opening hours</caption><!--cím-->
-        <thead><!--fejléc-->
-            <tr>
-                <th>Day</th>
-                <th>Open</th>
-                <th>Close</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><!--1. sor-->
-                <td>Monday-Friday</td><!--1. mező-->
-                <td>09:00</td><!--2. mező-->
-                <td rowspan="2">21:00</td><!--mező amely 2 magas (függőlegesen nyújtott)-->
-            </tr>
-            <tr><!--2. sor-->
-                <td>Saturday</td>
-                <td>10:00</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td colspan="2">Closed</td> <!--mező amely 2 széles (vízszintesen nyújtott)-->
-            </tr>
-        </tbody>
-        <tfoot><!--lábléc-->
-            <tr>
-                <td colspan="3">&copy;2019</td>
-            </tr>
-        </tfoot>
-    </table>
 
 </body>
 
